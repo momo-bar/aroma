@@ -13,3 +13,7 @@ main > section[aria-labelledby="menu-h"] { display: none !important; }
 @media (min-width: 761px) {
   main > section[aria-label="Nos burgers vedettes"] image-slot { width: 85% !important; margin-left: 7.5%; }
 }
+
+/* À propos : le bloc photo « la salle ou le chef » (à droite du titre) est retiré
+   tant qu'il n'y a pas de photo. Supprimer cette règle pour le réafficher. */
+main > section.ag-split > div:has(> image-slot#about-hero) { display: none !important; }
