@@ -23,6 +23,17 @@ Tout le texte visible et les données se trouvent dans `index.html` :
 - Photos de la roue du menu : remplacer les fichiers dans `assets/img/` en gardant les mêmes noms.
 - Photos du héros et des plats vedettes : les `<image-slot>` sans attribut `src` affichent un texte de remplacement. Ajouter `src="assets/img/mon-image.jpg"` sur la balise pour afficher une photo.
 
+## Regénérer le site depuis un export
+
+La page a été produite avec un outil de design qui exporte un fichier HTML unique auto-extractible.
+Pour repartir d'un nouvel export (par exemple `Aroma Gourmet - Accueil.html`), lancer depuis la racine du dépôt :
+
+```
+node tools/unpack-bundle.js "C:\chemin\vers\Aroma Gourmet - Accueil.html" .
+```
+
+Cela réécrit `index.html`, `assets/`, `js/` et `vendor/`. Puis `git add -A`, `git commit`, `git push` : GitHub Pages republie automatiquement.
+
 ## Pages manquantes
 
 La navigation pointe vers `Menu.dc.html`, `About.dc.html` et `Contact.dc.html`, qui ne font pas encore partie du dépôt. Ajouter ces fichiers à la racine pour activer les liens.
