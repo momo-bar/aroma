@@ -31,13 +31,14 @@ module.exports = [
     replace: "{ id: 'hero-guac', name: 'Guacamole', src: 'assets/img/burger-guacamole.jpg', placeholder:",
   },
   {
-    // La diapositive « Poulet croustillant » est retirée tant qu'il n'y a pas de
-    // photo : sans elle, une diapositive vide passerait toutes les 25 secondes.
-    // Pour la remettre, supprimer cette entrée (et fournir une photo).
+    // La diapositive « Poulet croustillant » est remplacée par le burger double
+    // tant qu'il n'y a pas de photo du poulet : sans photo, une diapositive vide
+    // passerait toutes les 25 secondes. Pour remettre le poulet, rétablir sa
+    // ligne ici avec un src vers sa photo.
     file: 'index.html',
-    note: 'héros : photo Burger Original, diapositive Poulet retirée (pas de photo)',
+    note: 'héros : photo Burger Original, diapositive Poulet remplacée par Burger Double',
     find: "{ id: 'hero-original', name: 'Original', placeholder: 'Photo : Burger Original (plein écran)' },\n    { id: 'hero-poulet', name: 'Poulet croustillant', placeholder: 'Photo : Burger poulet croustillant (plein écran)' }",
-    replace: "{ id: 'hero-original', name: 'Original', src: 'assets/img/burger-original.jpg', placeholder: 'Photo : Burger Original (plein écran)' }",
+    replace: "{ id: 'hero-original', name: 'Original', src: 'assets/img/burger-original.jpg', placeholder: 'Photo : Burger Original (plein écran)' },\n    { id: 'hero-double', name: 'Double', src: 'assets/img/burger-double.jpg', placeholder: 'Photo : Burger Double (plein écran)' }",
   },
 
   // ── Accueil : photos des trois cartes « Ce que Montréal commande » ──

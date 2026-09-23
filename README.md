@@ -58,8 +58,10 @@ est perdue à la prochaine régénération : pour qu'elle survive, l'ajouter com
 `tools/patches.js` (un texte à trouver, un texte de remplacement), ou pour du style dans `assets/site.css`.
 
 Les photos des burgers (`assets/img/burger-*.jpg`, 1800 px de large) sont branchées sur le héros et les
-cartes vedettes de l'accueil par `tools/patches.js`. Pour ajouter la photo du poulet croustillant,
-déposer `assets/img/burger-poulet.jpg` et retirer la suppression de la diapositive dans ce fichier.
+cartes vedettes de l'accueil par `tools/patches.js`. Le héros tourne sur cinq photos (Suprême, Truffe,
+Guacamole, Original, Double) ; la diapositive « Poulet croustillant » attend une photo
+(`assets/img/burger-poulet.jpg`, puis rétablir sa ligne dans `tools/patches.js`). Les photos du héros
+sont réduites de 15 % par une règle de `assets/site.css`.
 
 - Photos de la roue du menu : remplacer les fichiers dans `assets/img/` en gardant les mêmes noms.
 - Autres photos : les `<image-slot>` sans attribut `src` affichent un texte de remplacement.

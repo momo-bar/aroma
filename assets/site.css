@@ -5,3 +5,11 @@
 /* Accueil : section « Le menu » (roue de plats au défilement) masquée temporairement.
    Supprimer cette règle pour la réafficher. */
 main > section[aria-labelledby="menu-h"] { display: none !important; }
+
+/* Accueil : photos du héros réduites de 15 % (elles étaient trop zoomées).
+   La zone d'image est rétrécie de 7,5 % de chaque côté ; le composant recadre
+   la photo dans cette zone plus étroite, qui montre donc davantage du burger.
+   Sur mobile le héros est borné par sa hauteur, la règle n'aurait pas cet effet. */
+@media (min-width: 761px) {
+  main > section[aria-label="Nos burgers vedettes"] image-slot { width: 85% !important; margin-left: 7.5%; }
+}
