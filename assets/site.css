@@ -1,0 +1,7 @@
+/* Ajustements propres au site, appliqués par-dessus les pages exportées.
+   Ce fichier est lié dans l'en-tête de chaque page par tools/unpack-bundle.js,
+   il survit donc à la régénération des pages depuis de nouveaux exports. */
+
+/* Accueil : section « Le menu » (roue de plats au défilement) masquée temporairement.
+   Supprimer cette règle pour la réafficher. */
+main > section[aria-labelledby="menu-h"] { display: none !important; }

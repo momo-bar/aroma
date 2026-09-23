@@ -23,6 +23,7 @@ Site statique : aucun build, aucune dépendance externe. Il suffit de servir le 
 | `vendor/` | React 18.3.1 et ReactDOM, servis localement |
 | `assets/img/` | Vignettes des plats affichées dans la roue du menu de l'accueil |
 | `assets/fonts/` | Polices Big Shoulders Display et Work Sans (woff2), partagées par toutes les pages |
+| `assets/site.css` | Ajustements manuels appliqués par-dessus les exports (ex. section masquée) ; lié dans chaque page par l'outil |
 | `tools/unpack-bundle.js` | Outil qui reconstruit le site à partir des exports de l'outil de design |
 
 ## Mettre à jour le site depuis de nouveaux exports

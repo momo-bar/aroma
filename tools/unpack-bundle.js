@@ -152,11 +152,15 @@ for (const p of pages) {
 
   // Static <title> and lang: the runtime hoists <meta> from the <helmet> block
   // but drops <title>, so take the title from the export's own wrapper page.
+  // assets/site.css holds hand-written overrides (kept outside the exports so
+  // they survive regeneration); it is linked only if the file exists.
+  const siteCss = fs.existsSync(path.join(outDir, 'assets/site.css'))
+    ? '\n<link rel="stylesheet" href="assets/site.css">' : '';
   const headOpen = t.match(/<head[^>]*>/i);
   if (headOpen) {
     const i = headOpen.index + headOpen[0].length;
     const titleTag = p.outerTitle ? '\n<title>' + p.outerTitle + '</title>' : '';
-    t = t.slice(0, i) + titleTag + resourceScript + t.slice(i);
+    t = t.slice(0, i) + titleTag + siteCss + resourceScript + t.slice(i);
   }
   t = t.replace(/<html>/i, '<html lang="fr-CA">');
   for (const [from, to] of Object.entries(LEGACY_LINKS)) t = t.split('href="' + from + '"').join('href="' + to + '"');
