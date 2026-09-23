@@ -19,6 +19,8 @@ const path = require('path');
 const zlib = require('zlib');
 const crypto = require('crypto');
 
+const PATCHES = require('./patches.js');
+
 const args = process.argv.slice(2);
 if (args.length < 2) {
   console.error('usage: node tools/unpack-bundle.js <export.html | folder> [...] <outDir>');
@@ -164,6 +166,13 @@ for (const p of pages) {
   }
   t = t.replace(/<html>/i, '<html lang="fr-CA">');
   for (const [from, to] of Object.entries(LEGACY_LINKS)) t = t.split('href="' + from + '"').join('href="' + to + '"');
+
+  // Hand-written patches (photos, temporary removals) live in tools/patches.js
+  // so they are re-applied after every regeneration.
+  for (const patch of PATCHES.filter((x) => x.file === p.name)) {
+    if (t.includes(patch.find)) t = t.split(patch.find).join(patch.replace);
+    else console.warn('WARNING patch not applied to ' + p.name + ' (text not found): ' + patch.note);
+  }
 
   fs.writeFileSync(path.join(outDir, p.name), t, 'utf8');
   const leftover = t.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g);

@@ -25,6 +25,7 @@ Site statique : aucun build, aucune dépendance externe. Il suffit de servir le 
 | `assets/fonts/` | Polices Big Shoulders Display et Work Sans (woff2), partagées par toutes les pages |
 | `assets/site.css` | Ajustements manuels appliqués par-dessus les exports (ex. section masquée) ; lié dans chaque page par l'outil |
 | `tools/unpack-bundle.js` | Outil qui reconstruit le site à partir des exports de l'outil de design |
+| `tools/patches.js` | Retouches rejouées par l'outil après chaque régénération (photos des burgers, diapositive retirée) |
 
 ## Mettre à jour le site depuis de nouveaux exports
 
@@ -52,7 +53,13 @@ GitHub Pages republie automatiquement en une ou deux minutes.
 ## Modifier le contenu à la main
 
 Tout le texte visible et les données de chaque page se trouvent dans son fichier HTML, dans le HTML
-et dans le script `data-dc-script` en bas du fichier.
+et dans le script `data-dc-script` en bas du fichier. Une modification faite directement dans une page
+est perdue à la prochaine régénération : pour qu'elle survive, l'ajouter comme entrée dans
+`tools/patches.js` (un texte à trouver, un texte de remplacement), ou pour du style dans `assets/site.css`.
+
+Les photos des burgers (`assets/img/burger-*.jpg`, 1800 px de large) sont branchées sur le héros et les
+cartes vedettes de l'accueil par `tools/patches.js`. Pour ajouter la photo du poulet croustillant,
+déposer `assets/img/burger-poulet.jpg` et retirer la suppression de la diapositive dans ce fichier.
 
 - Photos de la roue du menu : remplacer les fichiers dans `assets/img/` en gardant les mêmes noms.
 - Autres photos : les `<image-slot>` sans attribut `src` affichent un texte de remplacement.
