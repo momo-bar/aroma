@@ -25,7 +25,7 @@ Site statique : aucun build, aucune dépendance externe. Il suffit de servir le 
 | `assets/fonts/` | Polices Big Shoulders Display et Work Sans (woff2), partagées par toutes les pages |
 | `assets/site.css` | Ajustements manuels appliqués par-dessus les exports (ex. section masquée) ; lié dans chaque page par l'outil |
 | `tools/unpack-bundle.js` | Outil qui reconstruit le site à partir des exports de l'outil de design |
-| `tools/patches.js` | Retouches rejouées par l'outil après chaque régénération (photos des burgers, diapositive retirée, bloc « Le chef » déplacé sur l'accueil) |
+| `tools/patches.js` | Retouches rejouées par l'outil après chaque régénération (photos des burgers, diapositive retirée) |
 
 ## Mettre à jour le site depuis de nouveaux exports
 

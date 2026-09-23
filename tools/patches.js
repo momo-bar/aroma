@@ -9,16 +9,6 @@
 'use strict';
 
 module.exports = [
-  // ── Bloc « Le chef » : retiré de la page À propos, placé sur l'accueil ──
-  {
-    type: 'move',
-    note: "bloc « Le chef » déplacé de À propos vers l'accueil, avant « Ils en parlent »",
-    from: 'a-propos.html',
-    to: 'index.html',
-    start: '<section class="ag-split" aria-labelledby="chef"',
-    end: '</section>',
-    before: '<!-- Reviews -->',
-  },
 
   // ── Accueil : photos des burgers dans le héros (diapositives plein écran) ──
   {

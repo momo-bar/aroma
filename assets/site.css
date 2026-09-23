@@ -17,3 +17,8 @@ main > section[aria-labelledby="menu-h"] { display: none !important; }
 /* À propos : le bloc photo « la salle ou le chef » (à droite du titre) est retiré
    tant qu'il n'y a pas de photo. Supprimer cette règle pour le réafficher. */
 main > section.ag-split > div:has(> image-slot#about-hero) { display: none !important; }
+
+/* À propos : le cadre photo « le chef en cuisine » (à gauche du bloc « Le chef »)
+   est retiré tant qu'il n'y a pas de photo ; le texte reste. Supprimer cette
+   règle pour le réafficher. */
+main > section.ag-split > div:has(> image-slot#about-chef) { display: none !important; }
