@@ -1,10 +1,25 @@
 // Retouches appliquées par tools/unpack-bundle.js après la régénération d'une
-// page depuis un export. Chaque entrée remplace toutes les occurrences de
-// `find` par `replace` dans le fichier `file`. Si `find` n'est plus présent
-// (l'export a changé), l'outil affiche un avertissement et passe à la suite.
+// page depuis un export.
+//  - Entrée simple : remplace toutes les occurrences de `find` par `replace`
+//    dans le fichier `file`.
+//  - Entrée `type: 'move'` : découpe dans `from` le bloc allant de `start` au
+//    premier `end` qui suit, et l'insère dans `to` juste avant `before`.
+// Si un repère n'est plus présent (l'export a changé), l'outil affiche un
+// avertissement et passe à la suite.
 'use strict';
 
 module.exports = [
+  // ── Bloc « Le chef » : retiré de la page À propos, placé sur l'accueil ──
+  {
+    type: 'move',
+    note: "bloc « Le chef » déplacé de À propos vers l'accueil, avant « Ils en parlent »",
+    from: 'a-propos.html',
+    to: 'index.html',
+    start: '<section class="ag-split" aria-labelledby="chef"',
+    end: '</section>',
+    before: '<!-- Reviews -->',
+  },
+
   // ── Accueil : photos des burgers dans le héros (diapositives plein écran) ──
   {
     file: 'index.html',

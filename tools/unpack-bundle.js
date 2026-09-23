@@ -136,7 +136,8 @@ for (const [hash, a] of assets) {
   report.push({ file: rel, mime: a.mime, kb: (a.bytes.length / 1024).toFixed(1) });
 }
 
-// Pass 3: write each page with real paths.
+// Pass 3: build each page with real paths (written after the moves below).
+const texts = new Map();
 for (const p of pages) {
   let t = p.template;
   for (const [uuid, hash] of Object.entries(p.uuidToHash)) t = t.split(uuid).join(pathByHash.get(hash));
@@ -169,13 +170,30 @@ for (const p of pages) {
 
   // Hand-written patches (photos, temporary removals) live in tools/patches.js
   // so they are re-applied after every regeneration.
-  for (const patch of PATCHES.filter((x) => x.file === p.name)) {
+  for (const patch of PATCHES.filter((x) => x.file === p.name && !x.type)) {
     if (t.includes(patch.find)) t = t.split(patch.find).join(patch.replace);
     else console.warn('WARNING patch not applied to ' + p.name + ' (text not found): ' + patch.note);
   }
+  texts.set(p.name, t);
+}
 
-  fs.writeFileSync(path.join(outDir, p.name), t, 'utf8');
+// Moves: cut a block (from `start` through the first `end` after it) out of
+// one page and insert it into another, just before the `before` marker.
+for (const mv of PATCHES.filter((x) => x.type === 'move')) {
+  const src = texts.get(mv.from), dst = texts.get(mv.to);
+  const i = src === undefined ? -1 : src.indexOf(mv.start);
+  const j = i < 0 ? -1 : src.indexOf(mv.end, i);
+  const k = dst === undefined ? -1 : dst.indexOf(mv.before);
+  if (i < 0 || j < 0 || k < 0) { console.warn('WARNING move not applied (marker not found): ' + mv.note); continue; }
+  const end = j + mv.end.length;
+  const block = src.slice(i, end);
+  texts.set(mv.from, src.slice(0, i).replace(/[ \t]*$/, '') + src.slice(end).replace(/^\r?\n/, ''));
+  texts.set(mv.to, dst.slice(0, k) + block + '\n\n' + dst.slice(k));
+}
+
+for (const [name, t] of texts) {
+  fs.writeFileSync(path.join(outDir, name), t, 'utf8');
   const leftover = t.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g);
-  console.log(p.name.padEnd(16), (t.length / 1024).toFixed(1) + ' kb', leftover ? 'WARNING leftover uuids: ' + leftover.join(', ') : 'OK');
+  console.log(name.padEnd(16), (t.length / 1024).toFixed(1) + ' kb', leftover ? 'WARNING leftover uuids: ' + leftover.join(', ') : 'OK');
 }
 console.table(report);
