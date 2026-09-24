@@ -26,6 +26,29 @@ Site statique : aucun build, aucune dépendance externe. Il suffit de servir le 
 | `assets/site.css` | Ajustements manuels appliqués par-dessus les exports (ex. section masquée) ; lié dans chaque page par l'outil |
 | `tools/unpack-bundle.js` | Outil qui reconstruit le site à partir des exports de l'outil de design |
 | `tools/patches.js` | Retouches rejouées par l'outil après chaque régénération (photos des burgers, diapositive retirée) |
+| `tools/site.config.js` | Coordonnées publiques du restaurant et adresse du site (`siteUrl`), source des métadonnées et des données structurées |
+| `tools/seo.js` | Pré-rendu statique des listes, métadonnées dans `<head>`, schema.org, robots.txt, sitemap.xml, llms.txt, 404.html |
+| `robots.txt`, `sitemap.xml`, `llms.txt`, `404.html` | Fichiers générés à chaque exécution de l'outil, ne pas modifier à la main |
+
+## Référencement (SEO)
+
+Tout est produit par `tools/seo.js` à partir de `tools/site.config.js` et des données des pages :
+
+- **Contenu lisible sans JavaScript.** Les listes (menu et prix, heures, plats vedettes, avis, valeurs) sont
+  pré-rendues en HTML statique à la place des boucles du gabarit. Google, Bing et les robots des plateformes IA
+  voient donc le menu complet même sans exécuter le JavaScript. Le moteur de la page affiche ce HTML tel quel.
+- **Métadonnées dans `<head>`** : title, description, canonical, Open Graph, Twitter Card, favicons,
+  préchargement des polices et de la première photo du héros.
+- **Données structurées schema.org** : `Restaurant` (adresse, coordonnées GPS, heures, cuisine, liens de
+  commande), `Menu` avec chaque plat et son prix, `WebSite`, page typée et fil d'Ariane.
+- **Fichiers racine** : `robots.txt` (robots IA explicitement autorisés), `sitemap.xml`, `llms.txt`
+  (résumé pour les assistants IA), `404.html`.
+
+Changer le domaine : modifier `siteUrl` dans `tools/site.config.js`, relancer l'outil, valider et pousser.
+Toutes les URL absolues (canonical, sitemap, Open Graph, schema.org, llms.txt) suivent.
+
+Note : `robots.txt` et `llms.txt` ne sont lus par les robots qu'à la racine d'un domaine. Ils ne prennent effet
+qu'une fois le site servi sur son propre domaine (ex. aromagourmet.ca), pas sous `momo-bar.github.io/aroma/`.
 
 ## Mettre à jour le site depuis de nouveaux exports
 

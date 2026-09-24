@@ -20,6 +20,8 @@ const zlib = require('zlib');
 const crypto = require('crypto');
 
 const PATCHES = require('./patches.js');
+const CONFIG = require('./site.config.js');
+const seo = require('./seo.js');
 
 const args = process.argv.slice(2);
 if (args.length < 2) {
@@ -138,6 +140,7 @@ for (const [hash, a] of assets) {
 
 // Pass 3: build each page with real paths (written after the moves below).
 const texts = new Map();
+const pageInfos = new Map();
 for (const p of pages) {
   let t = p.template;
   for (const [uuid, hash] of Object.entries(p.uuidToHash)) t = t.split(uuid).join(pathByHash.get(hash));
@@ -159,13 +162,7 @@ for (const p of pages) {
   // they survive regeneration); it is linked only if the file exists.
   const siteCss = fs.existsSync(path.join(outDir, 'assets/site.css'))
     ? '\n<link rel="stylesheet" href="assets/site.css">' : '';
-  const headOpen = t.match(/<head[^>]*>/i);
-  if (headOpen) {
-    const i = headOpen.index + headOpen[0].length;
-    const titleTag = p.outerTitle ? '\n<title>' + p.outerTitle + '</title>' : '';
-    t = t.slice(0, i) + titleTag + siteCss + resourceScript + t.slice(i);
-  }
-  t = t.replace(/<html>/i, '<html lang="fr-CA">');
+  t = t.replace(/<html>/i, '<html lang="' + CONFIG.language + '">');
   for (const [from, to] of Object.entries(LEGACY_LINKS)) t = t.split('href="' + from + '"').join('href="' + to + '"');
 
   // Hand-written patches (photos, temporary removals) live in tools/patches.js
@@ -174,7 +171,12 @@ for (const p of pages) {
     if (t.includes(patch.find)) t = t.split(patch.find).join(patch.replace);
     else console.warn('WARNING patch not applied to ' + p.name + ' (text not found): ' + patch.note);
   }
-  texts.set(p.name, t);
+
+  // SEO pass (tools/seo.js): static pre-render of the data lists, metadata and
+  // structured data in <head>, then site.css and the resource map.
+  const info = seo.preparePage({ name: p.name, html: t, cfg: CONFIG, headExtras: siteCss + resourceScript, fallbackTitle: p.outerTitle });
+  pageInfos.set(p.name, info);
+  texts.set(p.name, info.html);
 }
 
 // Moves: cut a block (from `start` through the first `end` after it) out of
@@ -196,4 +198,5 @@ for (const [name, t] of texts) {
   const leftover = t.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g);
   console.log(name.padEnd(16), (t.length / 1024).toFixed(1) + ' kb', leftover ? 'WARNING leftover uuids: ' + leftover.join(', ') : 'OK');
 }
+console.log('site files:', seo.writeSiteFiles(outDir, CONFIG, pageInfos).join(', '), '(base ' + CONFIG.siteUrl + ')');
 console.table(report);

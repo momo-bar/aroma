@@ -1,0 +1,63 @@
+# Aroma Gourmet
+
+> Aroma Gourmet est un restaurant fast-food gourmet halal du Village à Montréal (1651 rue Ontario Est, métro Papineau) : burgers maison, poutines à la sauce maison, ailes de poulet, sandwichs sur pain maison et salades. Salle à manger, comptoir, commandes pour emporter et livraison par Uber Eats et DoorDash.
+
+- Adresse : 1651 rue Ontario Est, Montréal (Québec) H2L 1S8, Canada — Le Village, métro Papineau
+- Téléphone : (438) 531-6482
+- Heures d’ouverture : Lundi 17 h – 22 h · Mardi à jeudi 11 h – 22 h · Vendredi et samedi 11 h – 23 h · Dimanche 11 h – 22 h
+- Viande 100 % halal. Prix en dollars canadiens, taxes en sus. Pas de réservation.
+- Commander en ligne : Uber Eats https://www.order.store/store/aroma-gourmet/RjftZDDYXX-YyPR5PmC5Vw · DoorDash https://www.doordash.com/store/aroma-gourmet-26313376
+- Instagram : https://www.instagram.com/aromagourmet_officiel/
+- Itinéraire : https://www.google.com/maps/dir/?api=1&destination=1651+Rue+Ontario+Est,+Montréal,+QC+H2L+1S8
+
+## Pages
+
+- [Accueil](https://momo-bar.github.io/aroma/) : Aroma Gourmet, restaurant fast-food gourmet au 1651 rue Ontario Est, Montréal. Burgers maison halal, poutines, ailes de poulet et salades. Commandez sur Uber Eats, DoorDash ou au (438) 531-6482.
+- [Menu](https://momo-bar.github.io/aroma/menu.html) : Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.
+- [À propos](https://momo-bar.github.io/aroma/a-propos.html) : L'histoire d'Aroma Gourmet : un petit restaurant du Village à Montréal qui prépare des burgers maison halal, des poutines et des ailes avec des ingrédients frais et locaux.
+- [Contact et heures](https://momo-bar.github.io/aroma/contact.html) : Aroma Gourmet : 1651 rue Ontario Est, Montréal, QC H2L 1S8 (métro Papineau). Téléphone (438) 531-6482. Ouvert 7 jours : lundi 17 h à 22 h, mardi à jeudi et dimanche 11 h à 22 h, vendredi et samedi 11 h à 23 h. Livraison Uber Eats et DoorDash.
+
+## Menu (prix en CAD)
+
+### Burgers — Formule trio : frites + boisson = 5,50 $ · option végétarienne + 2 $
+
+- Original — 13,50 $ : Steak burger, salade, tomate, double fromage, cornichons, oignons et sauce secrète.
+- Suprême — 13,50 $ : Steak burger, salade, tomate, oignons caramélisés, fromage et sauce secrète.
+- Guacamole — 14 $ : Steak burger, guacamole, salade, tomate, oignons caramélisés et sauce secrète.
+- Truffe — 14 $ : Steak burger, salade, tomate, fromage, champignons sautés à la truffe et mayo truffe.
+- Royal bacon et œuf — 14 $ : Steak burger, salade, tomate, œuf au plat, bacon, fromage et sauce secrète.
+- Poulet crousty — 14 $ : Filet de poulet frit, salade, tomate, chou crémeux, fromage, cornichons et sauce secrète.
+- Poulet grillé — 13,50 $ : Poulet grillé, chou crémeux, fromage, laitue, tomate et mayo chipotlé.
+- Poulet crousty teriyaki — 13,50 $ : Haut de cuisse de poulet frit, fromage, œuf au plat, frites et mayo teriyaki.
+
+### Sandwichs — Pain maison
+
+- Mixte — 16 $ : Pain maison, poulet, bœuf haché, salade, tomate, oignon, bacon et fromage.
+- Bœuf — 16 $ : Pain maison, bœuf haché, salade, tomate, oignon, oignons caramélisés et fromage.
+- Poulet — 16 $ : Pain maison, poulet grillé, salade, tomate, oignon, chou crémeux et fromage.
+
+### Poutines — Sauce poutine maison
+
+- Classique — 11 $ : Frites, sauce poutine et fromage.
+- Steak haché — 14,50 $ : Bœuf haché, frites, sauce poutine, fromage, guacamole, tomates, piment fort et oignons caramélisés.
+- Poulet grillé — 14,50 $ : Poulet grillé, frites, sauce poutine, fromage, guacamole, tomates, piment fort et oignons caramélisés.
+
+### Ailes de poulet — Sauces : BBQ · Miel & ail · Thaï chili doux
+
+- 6 ailes — 10 $ : Sauce au choix.
+- 12 ailes — 16 $ : Sauce au choix.
+- 24 ailes — 28 $ : Sauce au choix — parfait à partager.
+
+### Salades — Vinaigrettes : balsamique · yuzu · érable · wafu
+
+- Poulet grillé — 14 $ : Mélange de salade verte, poulet grillé, pois chiches, œuf dur, maïs, avocat, noix de Grenoble, tomate et fèves.
+- Burrata — 16 $ : Mixte de salade verte, burrata, pêches, raisins, tomates, graines de citrouille et chips de taro.
+- Betterave & feta — 13 $ : Mixte de salade verte, betteraves grillées au four, radis, pomme, noix de Grenoble, grenade, feta et oignon frit.
+
+### Extras — À ajouter à n’importe quel plat
+
+- Steak — 6 $ : Un steak burger supplémentaire.
+- Bacon — 4 $
+- Fromage — 2 $
+- Frites — 1 $
+- Formule trio — 5,50 $ : Frites + boisson avec tout burger ou sandwich.

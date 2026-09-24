@@ -1,10 +1,551 @@
 <!DOCTYPE html>
 <html lang="fr-CA"><head>
-<title>Menu — Aroma Gourmet Montréal | Burgers, poutines, ailes, salades</title>
-<link rel="stylesheet" href="assets/site.css">
-<script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu — Aroma Gourmet Montréal | Burgers, poutines, ailes, salades</title>
+<meta name="description" content="Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://momo-bar.github.io/aroma/menu.html">
+<meta name="theme-color" content="#15120f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aroma Gourmet">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:url" content="https://momo-bar.github.io/aroma/menu.html">
+<meta property="og:title" content="Menu — Aroma Gourmet Montréal | Burgers, poutines, ailes, salades">
+<meta property="og:description" content="Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.">
+<meta property="og:image" content="https://momo-bar.github.io/aroma/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Burger Suprême d’Aroma Gourmet, Montréal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Menu — Aroma Gourmet Montréal | Burgers, poutines, ailes, salades">
+<meta name="twitter:description" content="Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.">
+<meta name="twitter:image" content="https://momo-bar.github.io/aroma/assets/img/og.jpg">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/big-shoulders-display-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/work-sans-latin.woff2">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Restaurant",
+   "@id": "https://momo-bar.github.io/aroma/#restaurant",
+   "name": "Aroma Gourmet",
+   "url": "https://momo-bar.github.io/aroma/",
+   "description": "Aroma Gourmet est un restaurant fast-food gourmet halal du Village à Montréal (1651 rue Ontario Est, métro Papineau) : burgers maison, poutines à la sauce maison, ailes de poulet, sandwichs sur pain maison et salades. Salle à manger, comptoir, commandes pour emporter et livraison par Uber Eats et DoorDash.",
+   "image": [
+    "https://momo-bar.github.io/aroma/assets/img/og.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-supreme.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-truffe.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-guacamole.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-original.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-double.jpg"
+   ],
+   "logo": "https://momo-bar.github.io/aroma/assets/img/logo-aroma.png",
+   "telephone": "+1-438-531-6482",
+   "priceRange": "$",
+   "servesCuisine": [
+    "Burgers",
+    "Poutine",
+    "Ailes de poulet",
+    "Sandwichs",
+    "Salades",
+    "Fast food gourmet",
+    "Halal"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1651 rue Ontario Est",
+    "addressLocality": "Montréal",
+    "addressRegion": "QC",
+    "postalCode": "H2L 1S8",
+    "addressCountry": "CA"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5218,
+    "longitude": -73.5567
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Montréal"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday"
+     ],
+     "opens": "17:00",
+     "closes": "22:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Sunday"
+     ],
+     "opens": "11:00",
+     "closes": "22:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "11:00",
+     "closes": "23:00"
+    }
+   ],
+   "hasMenu": {
+    "@id": "https://momo-bar.github.io/aroma/menu.html#menu"
+   },
+   "acceptsReservations": false,
+   "currenciesAccepted": "CAD",
+   "hasMap": "https://www.google.com/maps/dir/?api=1&destination=1651+Rue+Ontario+Est,+Montréal,+QC+H2L+1S8",
+   "sameAs": [
+    "https://www.instagram.com/aromagourmet_officiel/",
+    "https://www.order.store/store/aroma-gourmet/RjftZDDYXX-YyPR5PmC5Vw",
+    "https://www.doordash.com/store/aroma-gourmet-26313376"
+   ],
+   "potentialAction": [
+    {
+     "@type": "OrderAction",
+     "name": "Commander sur Uber Eats",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.order.store/store/aroma-gourmet/RjftZDDYXX-YyPR5PmC5Vw",
+      "inLanguage": "fr-CA",
+      "actionPlatform": [
+       "https://schema.org/DesktopWebPlatform",
+       "https://schema.org/MobileWebPlatform"
+      ]
+     }
+    },
+    {
+     "@type": "OrderAction",
+     "name": "Commander sur DoorDash",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.doordash.com/store/aroma-gourmet-26313376",
+      "inLanguage": "fr-CA",
+      "actionPlatform": [
+       "https://schema.org/DesktopWebPlatform",
+       "https://schema.org/MobileWebPlatform"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://momo-bar.github.io/aroma/#website",
+   "url": "https://momo-bar.github.io/aroma/",
+   "name": "Aroma Gourmet",
+   "inLanguage": "fr-CA",
+   "publisher": {
+    "@id": "https://momo-bar.github.io/aroma/#restaurant"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://momo-bar.github.io/aroma/menu.html",
+   "url": "https://momo-bar.github.io/aroma/menu.html",
+   "name": "Menu — Aroma Gourmet Montréal | Burgers, poutines, ailes, salades",
+   "description": "Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.",
+   "inLanguage": "fr-CA",
+   "isPartOf": {
+    "@id": "https://momo-bar.github.io/aroma/#website"
+   },
+   "about": {
+    "@id": "https://momo-bar.github.io/aroma/#restaurant"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://momo-bar.github.io/aroma/assets/img/og.jpg",
+    "width": 1200,
+    "height": 630
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://momo-bar.github.io/aroma/menu.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://momo-bar.github.io/aroma/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Menu",
+     "item": "https://momo-bar.github.io/aroma/menu.html"
+    }
+   ]
+  },
+  {
+   "@type": "Menu",
+   "@id": "https://momo-bar.github.io/aroma/menu.html#menu",
+   "name": "Menu Aroma Gourmet",
+   "url": "https://momo-bar.github.io/aroma/menu.html",
+   "inLanguage": "fr-CA",
+   "hasMenuSection": [
+    {
+     "@type": "MenuSection",
+     "name": "Burgers",
+     "description": "Formule trio : frites + boisson = 5,50 $ · option végétarienne + 2 $",
+     "hasMenuItem": [
+      {
+       "@type": "MenuItem",
+       "name": "Original",
+       "description": "Steak burger, salade, tomate, double fromage, cornichons, oignons et sauce secrète.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "13.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Suprême",
+       "description": "Steak burger, salade, tomate, oignons caramélisés, fromage et sauce secrète.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "13.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Guacamole",
+       "description": "Steak burger, guacamole, salade, tomate, oignons caramélisés et sauce secrète.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Truffe",
+       "description": "Steak burger, salade, tomate, fromage, champignons sautés à la truffe et mayo truffe.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Royal bacon et œuf",
+       "description": "Steak burger, salade, tomate, œuf au plat, bacon, fromage et sauce secrète.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Poulet crousty",
+       "description": "Filet de poulet frit, salade, tomate, chou crémeux, fromage, cornichons et sauce secrète.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Poulet grillé",
+       "description": "Poulet grillé, chou crémeux, fromage, laitue, tomate et mayo chipotlé.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "13.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Poulet crousty teriyaki",
+       "description": "Haut de cuisse de poulet frit, fromage, œuf au plat, frites et mayo teriyaki.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "13.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      }
+     ]
+    },
+    {
+     "@type": "MenuSection",
+     "name": "Sandwichs",
+     "description": "Pain maison",
+     "hasMenuItem": [
+      {
+       "@type": "MenuItem",
+       "name": "Mixte",
+       "description": "Pain maison, poulet, bœuf haché, salade, tomate, oignon, bacon et fromage.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "16.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Bœuf",
+       "description": "Pain maison, bœuf haché, salade, tomate, oignon, oignons caramélisés et fromage.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "16.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Poulet",
+       "description": "Pain maison, poulet grillé, salade, tomate, oignon, chou crémeux et fromage.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "16.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      }
+     ]
+    },
+    {
+     "@type": "MenuSection",
+     "name": "Poutines",
+     "description": "Sauce poutine maison",
+     "hasMenuItem": [
+      {
+       "@type": "MenuItem",
+       "name": "Classique",
+       "description": "Frites, sauce poutine et fromage.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "11.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Steak haché",
+       "description": "Bœuf haché, frites, sauce poutine, fromage, guacamole, tomates, piment fort et oignons caramélisés.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Poulet grillé",
+       "description": "Poulet grillé, frites, sauce poutine, fromage, guacamole, tomates, piment fort et oignons caramélisés.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      }
+     ]
+    },
+    {
+     "@type": "MenuSection",
+     "name": "Ailes de poulet",
+     "description": "Sauces : BBQ · Miel & ail · Thaï chili doux",
+     "hasMenuItem": [
+      {
+       "@type": "MenuItem",
+       "name": "6 ailes",
+       "description": "Sauce au choix.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "10.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "12 ailes",
+       "description": "Sauce au choix.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "16.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "24 ailes",
+       "description": "Sauce au choix — parfait à partager.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "28.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      }
+     ]
+    },
+    {
+     "@type": "MenuSection",
+     "name": "Salades",
+     "description": "Vinaigrettes : balsamique · yuzu · érable · wafu",
+     "hasMenuItem": [
+      {
+       "@type": "MenuItem",
+       "name": "Poulet grillé",
+       "description": "Mélange de salade verte, poulet grillé, pois chiches, œuf dur, maïs, avocat, noix de Grenoble, tomate et fèves.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "14.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Burrata",
+       "description": "Mixte de salade verte, burrata, pêches, raisins, tomates, graines de citrouille et chips de taro.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "16.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Betterave & feta",
+       "description": "Mixte de salade verte, betteraves grillées au four, radis, pomme, noix de Grenoble, grenade, feta et oignon frit.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "13.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      }
+     ]
+    },
+    {
+     "@type": "MenuSection",
+     "name": "Extras",
+     "description": "À ajouter à n’importe quel plat",
+     "hasMenuItem": [
+      {
+       "@type": "MenuItem",
+       "name": "Steak",
+       "description": "Un steak burger supplémentaire.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "6.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Bacon",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "4.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Fromage",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "2.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Frites",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "1.00",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      },
+      {
+       "@type": "MenuItem",
+       "name": "Formule trio",
+       "description": "Frites + boisson avec tout burger ou sandwich.",
+       "suitableForDiet": "https://schema.org/HalalDiet",
+       "offers": {
+        "@type": "Offer",
+        "price": "5.50",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
+
 <script src="js/dc-runtime.js"></script>
 
 
@@ -12,9 +553,6 @@
 <body>
 <x-dc>
 <helmet>
-<title>Menu — Aroma Gourmet Montréal | Burgers, poutines, ailes, salades</title>
-<meta name="description" content="Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.">
-<meta name="robots" content="index, follow">
 <style>/* vietnamese */
 @font-face {
   font-family: 'Big Shoulders Display';
@@ -205,9 +743,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Menu","name":"Menu Aroma Gourmet","inLanguage":"fr-CA","hasMenuSection":[{"@type":"MenuSection","name":"Burgers","hasMenuItem":[{"@type":"MenuItem","name":"Burger Original","offers":{"@type":"Offer","price":"13.50","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Burger Suprême","offers":{"@type":"Offer","price":"13.50","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Burger Guacamole","offers":{"@type":"Offer","price":"14.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Burger Truffe","offers":{"@type":"Offer","price":"14.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Burger Royal bacon et œuf","offers":{"@type":"Offer","price":"14.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Burger Poulet crousty","offers":{"@type":"Offer","price":"14.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Burger Poulet grillé","offers":{"@type":"Offer","price":"13.50","priceCurrency":"CAD"}}]},{"@type":"MenuSection","name":"Sandwichs","hasMenuItem":[{"@type":"MenuItem","name":"Sandwich Mixte","offers":{"@type":"Offer","price":"16.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Sandwich Bœuf","offers":{"@type":"Offer","price":"16.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Sandwich Poulet","offers":{"@type":"Offer","price":"16.00","priceCurrency":"CAD"}}]},{"@type":"MenuSection","name":"Poutines","hasMenuItem":[{"@type":"MenuItem","name":"Poutine classique","offers":{"@type":"Offer","price":"11.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Poutine steak haché","offers":{"@type":"Offer","price":"14.50","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Poutine poulet grillé","offers":{"@type":"Offer","price":"14.50","priceCurrency":"CAD"}}]},{"@type":"MenuSection","name":"Ailes de poulet","hasMenuItem":[{"@type":"MenuItem","name":"6 ailes","offers":{"@type":"Offer","price":"10.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"12 ailes","offers":{"@type":"Offer","price":"16.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"24 ailes","offers":{"@type":"Offer","price":"28.00","priceCurrency":"CAD"}}]},{"@type":"MenuSection","name":"Salades","hasMenuItem":[{"@type":"MenuItem","name":"Salade poulet grillé","offers":{"@type":"Offer","price":"14.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Salade burrata","offers":{"@type":"Offer","price":"16.00","priceCurrency":"CAD"}},{"@type":"MenuItem","name":"Salade betterave & feta","offers":{"@type":"Offer","price":"13.00","priceCurrency":"CAD"}}]}]}
-</script>
 <style>
 html,body{margin:0;padding:0;background:#15120f;color:#f4ecdc;font-family:"Work Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
@@ -222,7 +757,7 @@ a{color:#f4ecdc;text-decoration:none}a:hover{color:#e9b43a}
 
 <header class="ag-header" style="position:fixed;top:0;left:0;right:0;z-index:30;background:#15120f;border-bottom:1px solid #2b2521;transition:transform .3s cubic-bezier(.2,0,0,1)">
   <nav aria-label="Navigation principale" style="max-width:1280px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
-    <a href="index.html" aria-label="Aroma Gourmet — accueil" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1;color:#f4ecdc">Aroma<span style="color:#d8361f">Gourmet</span></a>
+    <a href="./" aria-label="Aroma Gourmet — accueil" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1;color:#f4ecdc">Aroma<span style="color:#d8361f">Gourmet</span></a>
     <ul class="ag-nav-links" style="display:flex;gap:32px;list-style:none;margin:0;padding:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;letter-spacing:.06em;text-transform:uppercase">
       <li><a href="menu.html" aria-current="page" style="color:#e9b43a">Menu</a></li>
       <li><a href="a-propos.html">À propos</a></li>
@@ -245,31 +780,283 @@ a{color:#f4ecdc;text-decoration:none}a:hover{color:#e9b43a}
 
   <div class="ag-menu-layout" style="display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:start">
     <nav class="ag-menu-side" aria-label="Sections du menu" style="position:sticky;top:96px;display:flex;flex-direction:column;gap:6px">
-      <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="6">
-        <a href="#{{ sec.slug }}" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">{{ sec.title }}</a>
-      </sc-for>
+      
+        <a href="#burgers" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">Burgers</a>
+      
+        <a href="#sandwichs" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">Sandwichs</a>
+      
+        <a href="#poutines" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">Poutines</a>
+      
+        <a href="#ailes" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">Ailes de poulet</a>
+      
+        <a href="#salades" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">Salades</a>
+      
+        <a href="#extras" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;border-bottom:1px solid #2b2521;color:#c9bfae" style-hover="color:#e9b43a">Extras</a>
+      
     </nav>
 
     <div style="display:flex;flex-direction:column;gap:72px">
-      <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="6">
-        <section id="{{ sec.slug }}" aria-labelledby="h-{{ sec.slug }}" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
+      
+        <section id="burgers" aria-labelledby="h-burgers" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
           <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
-            <h2 id="h-{{ sec.slug }}" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">{{ sec.title }}</h2>
-            <span style="font-size:15px;color:#c9bfae">{{ sec.note }}</span>
+            <h2 id="h-burgers" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">Burgers</h2>
+            <span style="font-size:15px;color:#c9bfae">Formule trio : frites + boisson = 5,50 $ · option végétarienne + 2 $</span>
           </div>
           <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 40px">
-            <sc-for list="{{ sec.items }}" as="it" hint-placeholder-count="4">
+            
               <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
                 <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
-                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">{{ it.name }} <span style="font-size:14px;letter-spacing:.14em;color:#d8361f">{{ it.tag }}</span></h3>
-                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">{{ it.price }}</span>
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Original <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">13,50 $</span>
                 </div>
-                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">{{ it.desc }}</p>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Steak burger, salade, tomate, double fromage, cornichons, oignons et sauce secrète.</p>
               </li>
-            </sc-for>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Suprême <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">13,50 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Steak burger, salade, tomate, oignons caramélisés, fromage et sauce secrète.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Guacamole <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Steak burger, guacamole, salade, tomate, oignons caramélisés et sauce secrète.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Truffe <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Steak burger, salade, tomate, fromage, champignons sautés à la truffe et mayo truffe.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Royal bacon et œuf <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Steak burger, salade, tomate, œuf au plat, bacon, fromage et sauce secrète.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Poulet crousty <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Filet de poulet frit, salade, tomate, chou crémeux, fromage, cornichons et sauce secrète.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Poulet grillé <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">13,50 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Poulet grillé, chou crémeux, fromage, laitue, tomate et mayo chipotlé.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Poulet crousty teriyaki <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">13,50 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Haut de cuisse de poulet frit, fromage, œuf au plat, frites et mayo teriyaki.</p>
+              </li>
+            
           </ul>
         </section>
-      </sc-for>
+      
+        <section id="sandwichs" aria-labelledby="h-sandwichs" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+            <h2 id="h-sandwichs" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">Sandwichs</h2>
+            <span style="font-size:15px;color:#c9bfae">Pain maison</span>
+          </div>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 40px">
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Mixte <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">16 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Pain maison, poulet, bœuf haché, salade, tomate, oignon, bacon et fromage.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Bœuf <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">16 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Pain maison, bœuf haché, salade, tomate, oignon, oignons caramélisés et fromage.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Poulet <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">16 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Pain maison, poulet grillé, salade, tomate, oignon, chou crémeux et fromage.</p>
+              </li>
+            
+          </ul>
+        </section>
+      
+        <section id="poutines" aria-labelledby="h-poutines" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+            <h2 id="h-poutines" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">Poutines</h2>
+            <span style="font-size:15px;color:#c9bfae">Sauce poutine maison</span>
+          </div>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 40px">
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Classique <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">11 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Frites, sauce poutine et fromage.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Steak haché <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14,50 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Bœuf haché, frites, sauce poutine, fromage, guacamole, tomates, piment fort et oignons caramélisés.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Poulet grillé <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14,50 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Poulet grillé, frites, sauce poutine, fromage, guacamole, tomates, piment fort et oignons caramélisés.</p>
+              </li>
+            
+          </ul>
+        </section>
+      
+        <section id="ailes" aria-labelledby="h-ailes" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+            <h2 id="h-ailes" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">Ailes de poulet</h2>
+            <span style="font-size:15px;color:#c9bfae">Sauces : BBQ · Miel &amp; ail · Thaï chili doux</span>
+          </div>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 40px">
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">6 ailes <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">10 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Sauce au choix.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">12 ailes <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">16 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Sauce au choix.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">24 ailes <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">28 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Sauce au choix — parfait à partager.</p>
+              </li>
+            
+          </ul>
+        </section>
+      
+        <section id="salades" aria-labelledby="h-salades" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+            <h2 id="h-salades" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">Salades</h2>
+            <span style="font-size:15px;color:#c9bfae">Vinaigrettes : balsamique · yuzu · érable · wafu</span>
+          </div>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 40px">
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Poulet grillé <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">14 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Mélange de salade verte, poulet grillé, pois chiches, œuf dur, maïs, avocat, noix de Grenoble, tomate et fèves.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Burrata <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">16 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Mixte de salade verte, burrata, pêches, raisins, tomates, graines de citrouille et chips de taro.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Betterave &amp; feta <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">13 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Mixte de salade verte, betteraves grillées au four, radis, pomme, noix de Grenoble, grenade, feta et oignon frit.</p>
+              </li>
+            
+          </ul>
+        </section>
+      
+        <section id="extras" aria-labelledby="h-extras" style="scroll-margin-top:96px;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+            <h2 id="h-extras" style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1;text-transform:uppercase">Extras</h2>
+            <span style="font-size:15px;color:#c9bfae">À ajouter à n’importe quel plat</span>
+          </div>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 40px">
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Steak <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">6 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Un steak burger supplémentaire.</p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Bacon <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">4 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae"></p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Fromage <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">2 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae"></p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Frites <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">1 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae"></p>
+              </li>
+            
+              <li style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2b2521">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                  <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;line-height:1;text-transform:uppercase">Formule trio <span style="font-size:14px;letter-spacing:.14em;color:#d8361f"></span></h3>
+                  <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:24px;color:#e9b43a;line-height:1;white-space:nowrap">5,50 $</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#c9bfae">Frites + boisson avec tout burger ou sandwich.</p>
+              </li>
+            
+          </ul>
+        </section>
+      
     </div>
   </div>
 
@@ -284,7 +1071,7 @@ a{color:#f4ecdc;text-decoration:none}a:hover{color:#e9b43a}
 </main>
 
 <footer style="border-top:1px solid #2b2521;padding:40px 24px 32px">
-  <p style="max-width:1280px;margin:0 auto;font-size:13px;color:#6b6157">© 2026 Aroma Gourmet · 1651 rue Ontario Est, Montréal · <a href="index.html" style="color:#6b6157">Accueil</a> · <a href="a-propos.html" style="color:#6b6157">À propos</a> · <a href="contact.html" style="color:#6b6157">Contact</a></p>
+  <p style="max-width:1280px;margin:0 auto;font-size:13px;color:#6b6157">© 2026 Aroma Gourmet · 1651 rue Ontario Est, Montréal · <a href="./" style="color:#6b6157">Accueil</a> · <a href="a-propos.html" style="color:#6b6157">À propos</a> · <a href="contact.html" style="color:#6b6157">Contact</a></p>
 </footer>
 </x-dc>
 <script type="text/x-dc" data-dc-script="">

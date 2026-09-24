@@ -1,10 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr-CA"><head>
-<title>Aroma Gourmet — Meilleurs burgers et poutines à Montréal | Halal, Ontario Est</title>
-<link rel="stylesheet" href="assets/site.css">
-<script>window.__resources = {"tile_original":"assets/img/tile_original.png","tile_poulet":"assets/img/tile_poulet.png","tile_poutine":"assets/img/tile_poutine.png","tile_frites":"assets/img/tile_frites.png","tile_truffe":"assets/img/tile_truffe.png","tile_supreme":"assets/img/tile_supreme.png","tile_ailes":"assets/img/tile_ailes.png","tile_guac":"assets/img/tile_guac.png","https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aroma Gourmet — Meilleurs burgers et poutines à Montréal | Halal, Ontario Est</title>
+<meta name="description" content="Aroma Gourmet, restaurant fast-food gourmet au 1651 rue Ontario Est, Montréal. Burgers maison halal, poutines, ailes de poulet et salades. Commandez sur Uber Eats, DoorDash ou au (438) 531-6482.">
+<meta name="keywords" content="burger Montréal, poutine Montréal, restaurant halal Montréal, Aroma Gourmet, fast food Ontario Est, Village Montréal">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://momo-bar.github.io/aroma/">
+<meta name="theme-color" content="#15120f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aroma Gourmet">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:url" content="https://momo-bar.github.io/aroma/">
+<meta property="og:title" content="Aroma Gourmet — Meilleurs burgers et poutines à Montréal">
+<meta property="og:description" content="Burgers maison halal, poutines et ailes de poulet. 1651 rue Ontario Est, Montréal.">
+<meta property="og:image" content="https://momo-bar.github.io/aroma/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Burger Suprême d’Aroma Gourmet, Montréal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aroma Gourmet — Meilleurs burgers et poutines à Montréal">
+<meta name="twitter:description" content="Burgers maison halal, poutines et ailes de poulet. 1651 rue Ontario Est, Montréal.">
+<meta name="twitter:image" content="https://momo-bar.github.io/aroma/assets/img/og.jpg">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/big-shoulders-display-latin.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/work-sans-latin.woff2">
+<link rel="preload" as="image" href="assets/img/burger-supreme.jpg" fetchpriority="high">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Restaurant",
+   "@id": "https://momo-bar.github.io/aroma/#restaurant",
+   "name": "Aroma Gourmet",
+   "url": "https://momo-bar.github.io/aroma/",
+   "description": "Aroma Gourmet est un restaurant fast-food gourmet halal du Village à Montréal (1651 rue Ontario Est, métro Papineau) : burgers maison, poutines à la sauce maison, ailes de poulet, sandwichs sur pain maison et salades. Salle à manger, comptoir, commandes pour emporter et livraison par Uber Eats et DoorDash.",
+   "image": [
+    "https://momo-bar.github.io/aroma/assets/img/og.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-supreme.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-truffe.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-guacamole.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-original.jpg",
+    "https://momo-bar.github.io/aroma/assets/img/burger-double.jpg"
+   ],
+   "logo": "https://momo-bar.github.io/aroma/assets/img/logo-aroma.png",
+   "telephone": "+1-438-531-6482",
+   "priceRange": "$",
+   "servesCuisine": [
+    "Burgers",
+    "Poutine",
+    "Ailes de poulet",
+    "Sandwichs",
+    "Salades",
+    "Fast food gourmet",
+    "Halal"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1651 rue Ontario Est",
+    "addressLocality": "Montréal",
+    "addressRegion": "QC",
+    "postalCode": "H2L 1S8",
+    "addressCountry": "CA"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5218,
+    "longitude": -73.5567
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Montréal"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday"
+     ],
+     "opens": "17:00",
+     "closes": "22:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Sunday"
+     ],
+     "opens": "11:00",
+     "closes": "22:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "11:00",
+     "closes": "23:00"
+    }
+   ],
+   "hasMenu": {
+    "@id": "https://momo-bar.github.io/aroma/menu.html#menu"
+   },
+   "acceptsReservations": false,
+   "currenciesAccepted": "CAD",
+   "hasMap": "https://www.google.com/maps/dir/?api=1&destination=1651+Rue+Ontario+Est,+Montréal,+QC+H2L+1S8",
+   "sameAs": [
+    "https://www.instagram.com/aromagourmet_officiel/",
+    "https://www.order.store/store/aroma-gourmet/RjftZDDYXX-YyPR5PmC5Vw",
+    "https://www.doordash.com/store/aroma-gourmet-26313376"
+   ],
+   "potentialAction": [
+    {
+     "@type": "OrderAction",
+     "name": "Commander sur Uber Eats",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.order.store/store/aroma-gourmet/RjftZDDYXX-YyPR5PmC5Vw",
+      "inLanguage": "fr-CA",
+      "actionPlatform": [
+       "https://schema.org/DesktopWebPlatform",
+       "https://schema.org/MobileWebPlatform"
+      ]
+     }
+    },
+    {
+     "@type": "OrderAction",
+     "name": "Commander sur DoorDash",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.doordash.com/store/aroma-gourmet-26313376",
+      "inLanguage": "fr-CA",
+      "actionPlatform": [
+       "https://schema.org/DesktopWebPlatform",
+       "https://schema.org/MobileWebPlatform"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://momo-bar.github.io/aroma/#website",
+   "url": "https://momo-bar.github.io/aroma/",
+   "name": "Aroma Gourmet",
+   "inLanguage": "fr-CA",
+   "publisher": {
+    "@id": "https://momo-bar.github.io/aroma/#restaurant"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://momo-bar.github.io/aroma/",
+   "url": "https://momo-bar.github.io/aroma/",
+   "name": "Aroma Gourmet — Meilleurs burgers et poutines à Montréal | Halal, Ontario Est",
+   "description": "Aroma Gourmet, restaurant fast-food gourmet au 1651 rue Ontario Est, Montréal. Burgers maison halal, poutines, ailes de poulet et salades. Commandez sur Uber Eats, DoorDash ou au (438) 531-6482.",
+   "inLanguage": "fr-CA",
+   "isPartOf": {
+    "@id": "https://momo-bar.github.io/aroma/#website"
+   },
+   "about": {
+    "@id": "https://momo-bar.github.io/aroma/#restaurant"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://momo-bar.github.io/aroma/assets/img/og.jpg",
+    "width": 1200,
+    "height": 630
+   }
+  }
+ ]
+}
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<script>window.__resources = {"tile_original":"assets/img/tile_original.png","tile_poulet":"assets/img/tile_poulet.png","tile_poutine":"assets/img/tile_poutine.png","tile_frites":"assets/img/tile_frites.png","tile_truffe":"assets/img/tile_truffe.png","tile_supreme":"assets/img/tile_supreme.png","tile_ailes":"assets/img/tile_ailes.png","tile_guac":"assets/img/tile_guac.png","https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
+
 <script src="js/dc-runtime.js"></script>
 
 
@@ -19,16 +196,6 @@
 <body>
 <x-dc>
 <helmet>
-<title>Aroma Gourmet — Meilleurs burgers et poutines à Montréal | Halal, Ontario Est</title>
-<meta name="description" content="Aroma Gourmet, restaurant fast-food gourmet au 1651 rue Ontario Est, Montréal. Burgers maison halal, poutines, ailes de poulet et salades. Commandez sur Uber Eats, DoorDash ou au (438) 531-6482.">
-<meta name="keywords" content="burger Montréal, poutine Montréal, restaurant halal Montréal, Aroma Gourmet, fast food Ontario Est, Village Montréal">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta property="og:type" content="restaurant">
-<meta property="og:title" content="Aroma Gourmet — Meilleurs burgers et poutines à Montréal">
-<meta property="og:description" content="Burgers maison halal, poutines et ailes de poulet. 1651 rue Ontario Est, Montréal.">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:locale:alternate" content="en_CA">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <style>/* vietnamese */
 @font-face {
   font-family: 'Big Shoulders Display';
@@ -220,9 +387,6 @@
 }
 </style>
 <script src="js/image-slot.js"></script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Aroma Gourmet","description":"Restaurant fast-food gourmet à Montréal : burgers maison halal, poutines, ailes de poulet et salades.","image":"https://aromagourmet.ca/og.jpg","url":"https://aromagourmet.ca/","telephone":"+1-438-531-6482","priceRange":"$","servesCuisine":["Burgers","Poutine","Fast food","Halal"],"address":{"@type":"PostalAddress","streetAddress":"1651 rue Ontario Est","addressLocality":"Montréal","addressRegion":"QC","postalCode":"H2L 1S8","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":45.5218,"longitude":-73.5567},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday"],"opens":"17:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Sunday"],"opens":"11:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"11:00","closes":"23:00"}],"hasMenu":"https://aromagourmet.ca/menu","acceptsReservations":"False","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"250"},"sameAs":["https://www.instagram.com/aromagourmet_officiel/","https://www.order.store/store/aroma-gourmet/RjftZDDYXX-YyPR5PmC5Vw","https://www.doordash.com/store/aroma-gourmet-26313376"]}
-</script>
 <style>
 html,body{margin:0;padding:0;background:#15120f;color:#f4ecdc;font-family:"Work Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
@@ -238,7 +402,7 @@ a{color:#f4ecdc;text-decoration:none}a:hover{color:#e9b43a}
 
 <header class="ag-header" style="position:fixed;top:0;left:0;right:0;z-index:30;background:#15120f;border-bottom:1px solid #2b2521;transition:transform .3s cubic-bezier(.2,0,0,1)">
   <nav aria-label="Navigation principale" style="max-width:1280px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
-    <a href="index.html" aria-label="Aroma Gourmet — accueil" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1;color:#f4ecdc">Aroma<span style="color:#d8361f">Gourmet</span></a>
+    <a href="./" aria-label="Aroma Gourmet — accueil" style="font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1;color:#f4ecdc">Aroma<span style="color:#d8361f">Gourmet</span></a>
     <ul class="ag-nav-links" style="display:flex;gap:32px;list-style:none;margin:0;padding:0;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;letter-spacing:.06em;text-transform:uppercase">
       <li><a href="menu.html">Menu</a></li>
       <li><a href="a-propos.html">À propos</a></li>
@@ -315,16 +479,34 @@ a{color:#f4ecdc;text-decoration:none}a:hover{color:#e9b43a}
     <a href="menu.html" style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.08em;text-transform:uppercase;border-bottom:3px solid #d8361f;padding-bottom:4px">Menu complet</a>
   </div>
   <div class="ag-grid3" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
-    <sc-for list="{{ featured }}" as="f" hint-placeholder-count="3">
+    
       <article style="display:flex;flex-direction:column;gap:14px">
-        <div style="aspect-ratio:4/3;background:#221c18;border-radius:4px;overflow:hidden"><image-slot id="{{ f.id }}" shape="rect" src="{{ f.src }}" placeholder="{{ f.placeholder }}" style="width:100%;height:100%"></image-slot></div>
+        <div style="aspect-ratio:4/3;background:#221c18;border-radius:4px;overflow:hidden"><image-slot id="feat-supreme" shape="rect" src="assets/img/burger-supreme.jpg" placeholder="Photo : Burger Suprême" style="width:100%;height:100%"></image-slot></div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
-          <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;text-transform:uppercase">{{ f.name }}</h3>
-          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;color:#e9b43a;line-height:1;white-space:nowrap">{{ f.price }}</span>
+          <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;text-transform:uppercase">Burger Suprême</h3>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;color:#e9b43a;line-height:1;white-space:nowrap">13,50 $</span>
         </div>
-        <p style="margin:0;color:#c9bfae;font-size:16px;line-height:1.5">{{ f.desc }}</p>
+        <p style="margin:0;color:#c9bfae;font-size:16px;line-height:1.5">Steak burger, salade, tomate, oignons caramélisés, fromage et sauce secrète.</p>
       </article>
-    </sc-for>
+    
+      <article style="display:flex;flex-direction:column;gap:14px">
+        <div style="aspect-ratio:4/3;background:#221c18;border-radius:4px;overflow:hidden"><image-slot id="feat-truffe" shape="rect" src="assets/img/burger-truffe.jpg" placeholder="Photo : Burger Truffe" style="width:100%;height:100%"></image-slot></div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+          <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;text-transform:uppercase">Burger Truffe</h3>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;color:#e9b43a;line-height:1;white-space:nowrap">14 $</span>
+        </div>
+        <p style="margin:0;color:#c9bfae;font-size:16px;line-height:1.5">Steak burger, salade, tomate, fromage, champignons sautés à la truffe et mayo truffe.</p>
+      </article>
+    
+      <article style="display:flex;flex-direction:column;gap:14px">
+        <div style="aspect-ratio:4/3;background:#221c18;border-radius:4px;overflow:hidden"><image-slot id="feat-original" shape="rect" src="assets/img/burger-original.jpg" placeholder="Photo : Burger Original" style="width:100%;height:100%"></image-slot></div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+          <h3 style="margin:0;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:1;text-transform:uppercase">Burger Original</h3>
+          <span style="font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;color:#e9b43a;line-height:1;white-space:nowrap">13,50 $</span>
+        </div>
+        <p style="margin:0;color:#c9bfae;font-size:16px;line-height:1.5">Steak burger, salade, tomate, double fromage, cornichons, oignons et sauce secrète.</p>
+      </article>
+    
   </div>
 </section>
 
@@ -347,12 +529,22 @@ a{color:#f4ecdc;text-decoration:none}a:hover{color:#e9b43a}
   <div style="max-width:1280px;margin:0 auto">
     <h2 id="rev" style="margin:0 0 40px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(44px,5vw,76px);line-height:.95;text-transform:uppercase">Ils en parlent</h2>
     <div class="ag-grid3" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
-      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+      
         <blockquote style="margin:0;background:#fff;padding:28px;border-radius:4px;display:flex;flex-direction:column;gap:16px;border-bottom:4px solid #d8361f">
-          <p style="margin:0;font-size:18px;line-height:1.5;font-weight:500">« {{ r.text }} »</p>
-          <footer style="font-size:14px;color:#6b6157">{{ r.who }} · {{ r.source }}</footer>
+          <p style="margin:0;font-size:18px;line-height:1.5;font-weight:500">« Meilleure poutine du Village. Les burgers sont juteux, frais et le pain fait toute la différence. »</p>
+          <footer style="font-size:14px;color:#6b6157">Client Google · Google</footer>
         </blockquote>
-      </sc-for>
+      
+        <blockquote style="margin:0;background:#fff;padding:28px;border-radius:4px;display:flex;flex-direction:column;gap:16px;border-bottom:4px solid #d8361f">
+          <p style="margin:0;font-size:18px;line-height:1.5;font-weight:500">« Le burger suprême était un délice. Produits frais, portions généreuses. »</p>
+          <footer style="font-size:14px;color:#6b6157">Elmahdi K. · DoorDash</footer>
+        </blockquote>
+      
+        <blockquote style="margin:0;background:#fff;padding:28px;border-radius:4px;display:flex;flex-direction:column;gap:16px;border-bottom:4px solid #d8361f">
+          <p style="margin:0;font-size:18px;line-height:1.5;font-weight:500">« Les ailes sont croustillantes et délicieuses. Personnel super gentil. »</p>
+          <footer style="font-size:14px;color:#6b6157">Cliente Uber Eats · Uber Eats</footer>
+        </blockquote>
+      
     </div>
   </div>
 </section>
