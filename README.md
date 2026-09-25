@@ -1,7 +1,7 @@
 # Aroma Gourmet — site web
 
 Site vitrine du restaurant **Aroma Gourmet** (1651 rue Ontario Est, Montréal), publié avec GitHub Pages
-à l'adresse <https://momo-bar.github.io/aroma/>.
+à l'adresse <https://aromagourmet.ca/> (l'ancienne adresse momo-bar.github.io/aroma redirige).
 
 Site statique : aucun build, aucune dépendance externe. Il suffit de servir le dossier tel quel.
 
@@ -47,8 +47,9 @@ Tout est produit par `tools/seo.js` à partir de `tools/site.config.js` et des d
 Changer le domaine : modifier `siteUrl` dans `tools/site.config.js`, relancer l'outil, valider et pousser.
 Toutes les URL absolues (canonical, sitemap, Open Graph, schema.org, llms.txt) suivent.
 
-Note : `robots.txt` et `llms.txt` ne sont lus par les robots qu'à la racine d'un domaine. Ils ne prennent effet
-qu'une fois le site servi sur son propre domaine (ex. aromagourmet.ca), pas sous `momo-bar.github.io/aroma/`.
+Le domaine aromagourmet.ca est enregistré chez GoDaddy ; sa zone DNS (serveurs GoDaddy) contient quatre
+enregistrements A `@` vers les adresses de GitHub Pages et un CNAME `www` vers `momo-bar.github.io`. Le fichier
+`CNAME` à la racine du dépôt déclare le domaine à GitHub Pages, qui force le HTTPS.
 
 ## Mettre à jour le site depuis de nouveaux exports
 
