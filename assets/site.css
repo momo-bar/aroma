@@ -50,3 +50,9 @@ main > section.ag-split > div:has(> image-slot#about-chef) { display: none !impo
   }
   .ag-header.is-open .ag-nav-links li a { display: block; padding: 14px 0; font-size: 24px; border-top: 1px solid #2b2521; }
 }
+
+/* Tactile : le composant d'image pose touch-action:none sur ses photos (pour le
+   recadrage dans l'outil de design). Sur téléphone, un balayage commencé sur une
+   photo, en particulier le héros plein écran, ne faisait donc pas défiler la page.
+   On rétablit le défilement et le zoom à deux doigts. */
+image-slot::part(image) { touch-action: pan-x pan-y pinch-zoom !important; }
