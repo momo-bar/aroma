@@ -9,6 +9,14 @@
 'use strict';
 
 module.exports = [
+  // ── Toutes les pages : bouton hamburger dans la barre de navigation ──
+  // Visible sous 760 px seulement (assets/site.css) ; l'ouverture est gérée par js/site.js.
+  {
+    file: '*',
+    note: 'barre de navigation : bouton hamburger avant la liste de liens',
+    find: '<ul class="ag-nav-links"',
+    replace: '<button type="button" class="ag-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="ag-nav-links"><span></span><span></span><span></span></button>\n    <ul id="ag-nav-links" class="ag-nav-links"',
+  },
 
   // ── Accueil : photos des burgers dans le héros (diapositives plein écran) ──
   {

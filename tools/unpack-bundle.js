@@ -160,14 +160,16 @@ for (const p of pages) {
   // but drops <title>, so take the title from the export's own wrapper page.
   // assets/site.css holds hand-written overrides (kept outside the exports so
   // they survive regeneration); it is linked only if the file exists.
-  const siteCss = fs.existsSync(path.join(outDir, 'assets/site.css'))
-    ? '\n<link rel="stylesheet" href="assets/site.css">' : '';
+  const siteCss = (fs.existsSync(path.join(outDir, 'assets/site.css'))
+    ? '\n<link rel="stylesheet" href="assets/site.css">' : '') +
+    (fs.existsSync(path.join(outDir, 'js/site.js'))
+    ? '\n<script defer src="js/site.js"></script>' : '');
   t = t.replace(/<html>/i, '<html lang="' + CONFIG.language + '">');
   for (const [from, to] of Object.entries(LEGACY_LINKS)) t = t.split('href="' + from + '"').join('href="' + to + '"');
 
   // Hand-written patches (photos, temporary removals) live in tools/patches.js
   // so they are re-applied after every regeneration.
-  for (const patch of PATCHES.filter((x) => x.file === p.name && !x.type)) {
+  for (const patch of PATCHES.filter((x) => (x.file === p.name || x.file === '*') && !x.type)) {
     if (t.includes(patch.find)) t = t.split(patch.find).join(patch.replace);
     else console.warn('WARNING patch not applied to ' + p.name + ' (text not found): ' + patch.note);
   }

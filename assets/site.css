@@ -22,3 +22,31 @@ main > section.ag-split > div:has(> image-slot#about-hero) { display: none !impo
    est retiré tant qu'il n'y a pas de photo ; le texte reste. Supprimer cette
    règle pour le réafficher. */
 main > section.ag-split > div:has(> image-slot#about-chef) { display: none !important; }
+
+/* ── Navigation sur petits écrans : bouton hamburger et panneau déroulant ──
+   Le bouton .ag-burger est ajouté dans la barre par tools/patches.js ;
+   js/site.js pose la classe .is-open sur l'en-tête. Au-delà de 760 px la barre
+   d'origine s'affiche telle quelle. */
+.ag-burger { display: none; }
+@media (max-width: 760px) {
+  .ag-header nav { padding: 0 12px !important; gap: 12px !important; justify-content: flex-start !important; }
+  .ag-header nav > a[aria-label] { font-size: 24px !important; }                                      /* logo */
+  .ag-header nav > a[target="_blank"] { margin-left: auto; padding: 10px 14px !important; font-size: 15px !important; } /* Commander */
+  .ag-burger {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; flex: none; order: 3; /* tout à droite, après « Commander » */
+    width: 40px; height: 40px; padding: 8px; border: 2px solid #f4ecdc; border-radius: 4px;
+    background: transparent; cursor: pointer;
+  }
+  .ag-burger span { display: block; height: 2px; background: #f4ecdc; border-radius: 1px; transition: transform .25s, opacity .25s; }
+  .ag-header.is-open .ag-burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .ag-header.is-open .ag-burger span:nth-child(2) { opacity: 0; }
+  .ag-header.is-open .ag-burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .ag-header.is-open { transform: none !important; }   /* reste visible même après un défilement */
+  .ag-header.is-open .ag-nav-links {
+    display: flex !important; flex-direction: column; gap: 0 !important;
+    position: absolute; top: 72px; left: 0; right: 0;
+    background: #15120f; border-bottom: 1px solid #2b2521; padding: 8px 24px 16px !important;
+    box-shadow: 0 24px 40px rgba(0, 0, 0, .45);
+  }
+  .ag-header.is-open .ag-nav-links li a { display: block; padding: 14px 0; font-size: 24px; border-top: 1px solid #2b2521; }
+}
