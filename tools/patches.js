@@ -20,6 +20,22 @@ module.exports = [
       '<path class="ag-burger-bars" d="M4 7h16M4 12h16M4 17h16"></path><path class="ag-burger-x" d="M6 6l12 12M18 6L6 18"></path></svg></button>\n    <ul id="ag-nav-links" class="ag-nav-links"',
   },
 
+  // ── Accueil : bouton « Service traiteur » dans la rangée de boutons du héros ──
+  // Ouvre le formulaire de demande dans un nouvel onglet.
+  {
+    file: 'index.html',
+    note: 'héros : bouton Service traiteur après le téléphone',
+    find: 'style-hover="border-color:#e9b43a;color:#e9b43a">(438) 531-6482</a>',
+    replace: 'style-hover="border-color:#e9b43a;color:#e9b43a">(438) 531-6482</a>\n' +
+      '        <a href="https://formulaire-ogoutsluxe.tiiny.site/" target="_blank" rel="noopener" class="ag-traiteur" ' +
+      'style="display:inline-flex;align-items:center;gap:10px;border:2px solid #e9b43a;color:#e9b43a;padding:14px 28px;' +
+      "font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;letter-spacing:.08em;text-transform:uppercase;line-height:1;border-radius:4px\" " +
+      'style-hover="background:#e9b43a;color:#15120f">' +
+      '<svg sc-camel-view-box="0 0 24 24" width="22" height="22" aria-hidden="true" style="display:block;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">' +
+      '<path d="M3 17h18"></path><path d="M5 16a7 7 0 0 1 14 0"></path><path d="M12 9V7"></path><path d="M10.5 6.5h3"></path></svg>' +
+      'Service traiteur</a>',
+  },
+
   // ── Accueil : photos des burgers dans le héros (diapositives plein écran) ──
   {
     file: 'index.html',
