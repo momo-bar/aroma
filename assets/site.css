@@ -33,14 +33,14 @@ main > section.ag-split > div:has(> image-slot#about-chef) { display: none !impo
   .ag-header nav > a[aria-label] { font-size: 24px !important; }                                      /* logo */
   .ag-header nav > a[target="_blank"] { margin-left: auto; padding: 10px 14px !important; font-size: 15px !important; } /* Commander */
   .ag-burger {
-    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; flex: none; order: 3; /* tout à droite, après « Commander » */
-    width: 40px; height: 40px; padding: 8px; border: 2px solid #f4ecdc; border-radius: 4px;
-    background: transparent; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; flex: none; order: 3; /* tout à droite, après « Commander » */
+    width: 40px; height: 40px; padding: 0; border: 2px solid #f4ecdc; border-radius: 4px;
+    background: transparent; color: #f4ecdc; cursor: pointer;
   }
-  .ag-burger span { display: block; height: 2px; background: #f4ecdc; border-radius: 1px; transition: transform .25s, opacity .25s; }
-  .ag-header.is-open .ag-burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .ag-header.is-open .ag-burger span:nth-child(2) { opacity: 0; }
-  .ag-header.is-open .ag-burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .ag-burger svg { width: 26px; height: 26px; display: block; }
+  .ag-burger .ag-burger-x { display: none; }
+  .ag-header.is-open .ag-burger .ag-burger-bars { display: none; }
+  .ag-header.is-open .ag-burger .ag-burger-x { display: block; }
   .ag-header.is-open { transform: none !important; }   /* reste visible même après un défilement */
   .ag-header.is-open .ag-nav-links {
     display: flex !important; flex-direction: column; gap: 0 !important;

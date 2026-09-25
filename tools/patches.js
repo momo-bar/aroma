@@ -15,7 +15,9 @@ module.exports = [
     file: '*',
     note: 'barre de navigation : bouton hamburger avant la liste de liens',
     find: '<ul class="ag-nav-links"',
-    replace: '<button type="button" class="ag-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="ag-nav-links"><span></span><span></span><span></span></button>\n    <ul id="ag-nav-links" class="ag-nav-links"',
+    replace: '<button type="button" class="ag-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="ag-nav-links">' +
+      '<svg sc-camel-view-box="0 0 24 24" width="22" height="22" aria-hidden="true" style="display:block;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round">' +
+      '<path class="ag-burger-bars" d="M4 7h16M4 12h16M4 17h16"></path><path class="ag-burger-x" d="M6 6l12 12M18 6L6 18"></path></svg></button>\n    <ul id="ag-nav-links" class="ag-nav-links"',
   },
 
   // ── Accueil : photos des burgers dans le héros (diapositives plein écran) ──

@@ -160,10 +160,13 @@ for (const p of pages) {
   // but drops <title>, so take the title from the export's own wrapper page.
   // assets/site.css holds hand-written overrides (kept outside the exports so
   // they survive regeneration); it is linked only if the file exists.
+  // A content hash in the query string makes browsers fetch the new version
+  // after every change instead of serving a cached copy.
+  const version = (rel) => '?v=' + sha1(fs.readFileSync(path.join(outDir, rel))).slice(0, 8);
   const siteCss = (fs.existsSync(path.join(outDir, 'assets/site.css'))
-    ? '\n<link rel="stylesheet" href="assets/site.css">' : '') +
+    ? '\n<link rel="stylesheet" href="assets/site.css' + version('assets/site.css') + '">' : '') +
     (fs.existsSync(path.join(outDir, 'js/site.js'))
-    ? '\n<script defer src="js/site.js"></script>' : '');
+    ? '\n<script defer src="js/site.js' + version('js/site.js') + '"></script>' : '');
   t = t.replace(/<html>/i, '<html lang="' + CONFIG.language + '">');
   for (const [from, to] of Object.entries(LEGACY_LINKS)) t = t.split('href="' + from + '"').join('href="' + to + '"');
 
