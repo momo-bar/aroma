@@ -46,4 +46,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://momo-bar.github.io/aroma/sitemap.xml
+Sitemap: https://aromagourmet.ca/sitemap.xml

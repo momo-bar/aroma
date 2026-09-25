@@ -8,7 +8,7 @@ module.exports = {
   // 'https://aromagourmet.ca/' le jour où le domaine pointera vers GitHub
   // Pages, puis relancer l'outil : canonical, sitemap, Open Graph et données
   // structurées suivent automatiquement.
-  siteUrl: 'https://momo-bar.github.io/aroma/',
+  siteUrl: 'https://aromagourmet.ca/',
 
   name: 'Aroma Gourmet',
   description:

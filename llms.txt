@@ -12,10 +12,10 @@
 
 ## Pages
 
-- [Accueil](https://momo-bar.github.io/aroma/) : Aroma Gourmet, restaurant fast-food gourmet au 1651 rue Ontario Est, Montréal. Burgers maison halal, poutines, ailes de poulet et salades. Commandez sur Uber Eats, DoorDash ou au (438) 531-6482.
-- [Menu](https://momo-bar.github.io/aroma/menu.html) : Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.
-- [À propos](https://momo-bar.github.io/aroma/a-propos.html) : L'histoire d'Aroma Gourmet : un petit restaurant du Village à Montréal qui prépare des burgers maison halal, des poutines et des ailes avec des ingrédients frais et locaux.
-- [Contact et heures](https://momo-bar.github.io/aroma/contact.html) : Aroma Gourmet : 1651 rue Ontario Est, Montréal, QC H2L 1S8 (métro Papineau). Téléphone (438) 531-6482. Ouvert 7 jours : lundi 17 h à 22 h, mardi à jeudi et dimanche 11 h à 22 h, vendredi et samedi 11 h à 23 h. Livraison Uber Eats et DoorDash.
+- [Accueil](https://aromagourmet.ca/) : Aroma Gourmet, restaurant fast-food gourmet au 1651 rue Ontario Est, Montréal. Burgers maison halal, poutines, ailes de poulet et salades. Commandez sur Uber Eats, DoorDash ou au (438) 531-6482.
+- [Menu](https://aromagourmet.ca/menu.html) : Menu complet d'Aroma Gourmet à Montréal : burgers halal dès 13,50 $ (Original, Suprême, Guacamole, Truffe), sandwichs pain maison, poutines dès 11 $, ailes de poulet, salades. Prix et descriptions.
+- [À propos](https://aromagourmet.ca/a-propos.html) : L'histoire d'Aroma Gourmet : un petit restaurant du Village à Montréal qui prépare des burgers maison halal, des poutines et des ailes avec des ingrédients frais et locaux.
+- [Contact et heures](https://aromagourmet.ca/contact.html) : Aroma Gourmet : 1651 rue Ontario Est, Montréal, QC H2L 1S8 (métro Papineau). Téléphone (438) 531-6482. Ouvert 7 jours : lundi 17 h à 22 h, mardi à jeudi et dimanche 11 h à 22 h, vendredi et samedi 11 h à 23 h. Livraison Uber Eats et DoorDash.
 
 ## Menu (prix en CAD)
 
