@@ -20,6 +20,33 @@ module.exports = [
       '<path class="ag-burger-bars" d="M4 7h16M4 12h16M4 17h16"></path><path class="ag-burger-x" d="M6 6l12 12M18 6L6 18"></path></svg></button>\n    <ul id="ag-nav-links" class="ag-nav-links"',
   },
 
+  // ── Menu : section « Extras », prix et libellés mis à jour le 2026-10-04 ──
+  // (à reporter aussi dans l'outil de design pour que les exports suivent)
+  {
+    file: 'menu.html',
+    note: 'extras : Steak renommé Extra galette de viande',
+    find: "{ name: 'Steak', price: '6 $', desc: 'Un steak burger supplémentaire.' }",
+    replace: "{ name: 'Extra galette de viande', price: '6 $', desc: 'Un steak burger supplémentaire.' }",
+  },
+  {
+    file: 'menu.html',
+    note: 'extras : Bacon 4 $ → 2 $',
+    find: "{ name: 'Bacon', price: '4 $', desc: '' }",
+    replace: "{ name: 'Bacon', price: '2 $', desc: '' }",
+  },
+  {
+    file: 'menu.html',
+    note: 'extras : Fromage 2 $ → 1 $',
+    find: "{ name: 'Fromage', price: '2 $', desc: '' }",
+    replace: "{ name: 'Fromage', price: '1 $', desc: '' }",
+  },
+  {
+    file: 'menu.html',
+    note: 'extras : Frites 1 $ → 4 $',
+    find: "{ name: 'Frites', price: '1 $', desc: '' }",
+    replace: "{ name: 'Frites', price: '4 $', desc: '' }",
+  },
+
   // ── Accueil : bouton « Service traiteur » dans la rangée de boutons du héros ──
   // Ouvre le formulaire de demande dans un nouvel onglet.
   {

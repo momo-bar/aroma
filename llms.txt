@@ -56,8 +56,8 @@
 
 ### Extras — À ajouter à n’importe quel plat
 
-- Steak — 6 $ : Un steak burger supplémentaire.
-- Bacon — 4 $
-- Fromage — 2 $
-- Frites — 1 $
+- Extra galette de viande — 6 $ : Un steak burger supplémentaire.
+- Bacon — 2 $
+- Fromage — 1 $
+- Frites — 4 $
 - Formule trio — 5,50 $ : Frites + boisson avec tout burger ou sandwich.
