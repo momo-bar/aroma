@@ -24,9 +24,9 @@ module.exports = [
   // (à reporter aussi dans l'outil de design pour que les exports suivent)
   {
     file: 'menu.html',
-    note: 'extras : Steak renommé Extra galette de viande',
+    note: 'extras : Steak renommé Galette de viande',
     find: "{ name: 'Steak', price: '6 $', desc: 'Un steak burger supplémentaire.' }",
-    replace: "{ name: 'Extra galette de viande', price: '6 $', desc: 'Un steak burger supplémentaire.' }",
+    replace: "{ name: 'Galette de viande', price: '6 $', desc: 'Un steak burger supplémentaire.' }",
   },
   {
     file: 'menu.html',
